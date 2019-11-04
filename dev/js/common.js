@@ -1,5 +1,11 @@
 window.onload = () => {
 
-	@@include('../components/component/component.js')
+	@@include('../components/header/header.js')
+
+	$('.js-slider').slick({
+		arrows: false,
+		dots: true,
+		infinite: false
+	});
 
 }

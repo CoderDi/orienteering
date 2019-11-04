@@ -1,0 +1,79 @@
+doctype
+html(lang="ru")
+	head
+		title Document
+		include assets/_metas
+		include assets/_links
+		include assets/_scripts
+	body
+		main.content.content--page
+			.page-left
+			include ../components/header/header
+			
+			section.page.news-page
+				.wrapper
+					.page__wrapper
+						h2.page__title Новости
+						.news-page__list
+							.news-page__item
+								.news-page__item_img
+									img(src="", alt="")
+								.news-page__item_content
+									h3.news-page__item_title Календарь ФСО РТ на 2019 год
+									.news-page__item_metas
+										span.news-page__item_meta Дата: 20.12.2016
+										span.news-page__item_meta Просмотров: 4349
+										span.news-page__item_meta Добавил: shad
+									p.news-page__item_text Положение о чемпионатах и первенствах Республики Татарстан по спортивному ориентированию на 2019 год можно посмотреть здесь.
+										br
+										|Календарь соревнований, в котором планирует участие сборная команда Республики Татарстан в 2019 году
+									a.btn.news-page__item_btn(href="") читать
+
+							.news-page__item
+								.news-page__item_img
+									img(src="", alt="")
+								.news-page__item_content
+									h3.news-page__item_title Чемпионат и Первенство г.Набережные Челны по спортивному ориентированию
+									.news-page__item_metas
+										span.news-page__item_meta Дата: 20.12.2016
+										span.news-page__item_meta Просмотров: 4349
+										span.news-page__item_meta Добавил: shad
+									p.news-page__item_text С 7 по 8 сентября 2019 года в г. Набережные Челны пройдут Чемпионат и Первенство города по спортивному ориентированию в дисциплинах кросс-спринт и кросс-классика. 
+									a.btn.news-page__item_btn(href="") читать
+
+							.news-page__item
+								.news-page__item_img
+									img(src="", alt="")
+								.news-page__item_content
+									h3.news-page__item_title Соревнования "Здравствуй осень"
+									.news-page__item_metas
+										span.news-page__item_meta Дата: 20.12.2016
+										span.news-page__item_meta Просмотров: 4349
+										span.news-page__item_meta Добавил: shad
+									p.news-page__item_text Открываем осень 8 сентября "Дряничка" 
+									a.btn.news-page__item_btn(href="") читать
+
+							.news-page__item
+								.news-page__item_img
+									img(src="", alt="")
+								.news-page__item_content
+									h3.news-page__item_title Соревнования "Здравствуй осень"
+									.news-page__item_metas
+										span.news-page__item_meta Дата: 20.12.2016
+										span.news-page__item_meta Просмотров: 4349
+										span.news-page__item_meta Добавил: shad
+									p.news-page__item_text Открываем осень 8 сентября "Дряничка" 
+									a.btn.news-page__item_btn(href="") читать
+
+						.pagination
+							a.pagination__item.pagination__current(href="") 1
+							a.pagination__item(href="") 2
+							a.pagination__item(href="") 3
+							a.pagination__item(href="") 4
+							a.pagination__item(href="") 5
+							a.pagination__item(href="") 6
+							span.pagination__item.pagination__item_dots
+							a.pagination__item(href="") 23
+							
+			
+		include ../components/footer/footer

@@ -1,9 +1,134 @@
 doctype
-html(lang="ru", prefix="og: http://ogp.me/ns#")
+html(lang="ru")
 	head
 		title Document
 		include assets/_metas
 		include assets/_links
 		include assets/_scripts
 	body
-		.page-wrapper
+		main.content
+			include ../components/header/header
+			section.slider.js-slider
+				.slider__item
+					.wrapper
+						.slider__item_wrapper
+							.slider__item_content
+								h2.slider__item_title
+									strong Ориентирование — это спорт или искусство?
+									br
+									|Когда бегаешь в лесу — спорт. 
+									br
+									|Когда рассказываешь об этом — искусство
+								a.btn.slider__btn(href="") УЗНАТЬ БОЛЬШЕ
+							img.slider__item_img.slider__item_img--first(src="img/slider-img.png", alt="")
+				.slider__item
+					.wrapper
+						.slider__item_wrapper
+							img.slider__item_img.slider__item_img--first(src="img/slider-img.png", alt="")
+							.slider__item_content
+								h2.slider__item_title
+									strong Ориентирование — это спорт или искусство?
+									br
+									|Когда бегаешь в лесу — спорт. 
+									br
+									|Когда рассказываешь об этом — искусство
+								a.btn.slider__btn(href="") УЗНАТЬ БОЛЬШЕ
+			section.news
+				.wrapper
+					.news__wrapper
+						h2.news__title Новости
+						.news__list
+							.news__item
+								a.news__item_container(href="")
+									img.news__item_img(src="img/news1.png", alt="")
+									.news__item_over
+										strong Чемпионат и Первенство Пфо по спортивному ориентированию
+							.news__item
+								a.news__item_container(href="")
+									img.news__item_img(src="img/news2.png", alt="")
+									.news__item_over
+										strong Чемпионат и Первенство Пфо по спортивному ориентированию
+							.news__item
+								a.news__item_container(href="")
+									img.news__item_img(src="img/news3.png", alt="")
+									.news__item_over
+										strong Чемпионат и Первенство Пфо по спортивному ориентированию
+							.news__item
+								a.news__item_container(href="")
+									img.news__item_img(src="img/news2.png", alt="")
+									.news__item_over
+										strong Чемпионат и Первенство Пфо по спортивному ориентированию
+							.news__item
+								a.news__item_container(href="")
+									img.news__item_img(src="img/news1.png", alt="")
+									.news__item_over
+										strong Чемпионат и Первенство Пфо по спортивному ориентированию
+							.news__item
+								a.news__item_container(href="")
+									img.news__item_img(src="img/news2.png", alt="")
+									.news__item_over
+										strong Чемпионат и Первенство Пфо по спортивному ориентированию
+							.news__item
+								a.news__item_container(href="")
+									img.news__item_img(src="img/news3.png", alt="")
+									.news__item_over
+										strong Чемпионат и Первенство Пфо по спортивному ориентированию
+							.news__item
+								a.news__item_container(href="")
+									img.news__item_img(src="img/news2.png", alt="")
+									.news__item_over
+										strong Чемпионат и Первенство Пфо по спортивному ориентированию
+						
+						a.news__btn-more(href="") еще новости
+			section.calendar
+				img.shape.calendar__shape1(src="img/shape1.svg", alt="")
+				img.shape.calendar__shape2(src="img/shape2.svg", alt="")
+				.wrapper
+					.calendar__wrapper
+						h2.calendar__title Календарь ФСО РТ на 2019 год
+						.calendar__list
+							.calendar__item
+								a.calendar__item_container(href="")
+									.calendar__item_icon
+										img(src="img/icons/icons.svg#logo", alt="")
+									span.calendar__item_date 22.05.2019-28.05.2019
+									h3.calendar__item_title многодневные региональные соревнования "Акуля-2019"
+									.btn.calendar__item_btn подробнее
+							.calendar__item
+								a.calendar__item_container(href="")
+									.calendar__item_icon
+										img(src="img/icons/icons.svg#logo", alt="")
+									span.calendar__item_date 22.05.2019-28.05.2019
+									h3.calendar__item_title многодневные региональные соревнования "Акуля-2019"
+									.btn.calendar__item_btn подробнее
+							.calendar__item
+								a.calendar__item_container(href="")
+									.calendar__item_icon
+										img(src="img/icons/icons.svg#logo", alt="")
+									span.calendar__item_date 22.05.2019-28.05.2019
+									h3.calendar__item_title многодневные региональные соревнования "Акуля-2019"
+									.btn.calendar__item_btn подробнее
+							.calendar__item
+								a.calendar__item_container(href="")
+									.calendar__item_icon
+										img(src="img/icons/icons.svg#logo", alt="")
+									span.calendar__item_date 22.05.2019-28.05.2019
+									h3.calendar__item_title многодневные региональные соревнования "Акуля-2019"
+									.btn.calendar__item_btn подробнее
+							.calendar__item
+								a.calendar__item_container(href="")
+									.calendar__item_icon
+										img(src="img/icons/icons.svg#logo", alt="")
+									span.calendar__item_date 22.05.2019-28.05.2019
+									h3.calendar__item_title многодневные региональные соревнования "Акуля-2019"
+									.btn.calendar__item_btn подробнее
+							.calendar__item
+								a.calendar__item_container(href="")
+									.calendar__item_icon
+										img(src="img/icons/icons.svg#logo", alt="")
+									span.calendar__item_date 22.05.2019-28.05.2019
+									h3.calendar__item_title многодневные региональные соревнования "Акуля-2019"
+									.btn.calendar__item_btn подробнее
+
+		
+		include ../components/footer/footer

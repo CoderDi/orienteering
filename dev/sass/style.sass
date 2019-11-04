@@ -7,5 +7,322 @@
 @import 'assets/fonts'
 @import 'assets/base'
 
-// components
-// @import '../components/component/component'
+
+@import '../components/header/header'
+
+
+/*Main page*/
+.content
+  margin-bottom: 120px
+  position: relative
+
+  &--page
+    max-width: 1170px
+    margin-left: auto
+    margin-right: auto
+
+.slider
+  height: 510px
+  margin-bottom: 75px
+
+  &__item
+    background: #C8AC94
+
+    &_wrapper
+      height: 510px
+      display: flex
+      align-items: center
+      position: relative
+
+    &_img
+      position: absolute
+      bottom: 0
+      right: 0
+      height: 90%
+      width: auto
+    
+    &_content
+      position: relative
+      z-index: 2
+      max-width: 500px
+      padding: 15px 0
+
+    &_title
+      color: #ffffff
+      margin: 0 0 40px
+      font-size: 34px
+      line-height: 1.35
+
+      strong
+        text-transform: uppercase
+        font-weight: 700
+
+  .slick-dots
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    bottom: -75px
+    left: 0
+    width: 100%
+
+    button
+      display: block
+      font-size: 0
+      border: none
+      padding: 0
+      color: transparent
+      margin: 0 10px
+      width: 13px
+      height: 13px
+      border-radius: 100%
+      background: #D8D9D9
+    
+    .slick-active button
+      background: #8F489D;
+
+.news
+  padding: 50px 0 60px
+
+  &__title
+    margin: 0 0 60px
+    font-weight: 800
+    font-size: 48px
+    line-height: 65px
+    color: #8F489D
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -15px 10px
+
+  &__item
+    width: 25%
+    padding: 0 15px 55px
+
+    &_container
+      display: block
+      height: 100%
+      position: relative
+      height: 255px
+      background: #D8D9D9
+
+      &:hover .news__item_over
+        opacity: 1
+        visibility: visible
+    
+    &_img
+      object-fit: cover
+      width: 100%
+      height: 100%
+      display: block
+    
+    &_over
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      display: flex
+      text-align: center
+      align-items: center
+      background: rgba(98, 97, 97, 0.8)
+      opacity: 0
+      visibility: hidden
+      transition: .1s ease-in-out
+
+      strong
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+        color: #ffffff
+        text-transform: uppercase
+
+  &__btn-more
+    display: block
+    font-size: 20px
+    line-height: 1.5
+    color: #000000
+    text-transform: uppercase
+
+    &:hover
+      color: #8F489D
+
+.calendar
+  background: #008296
+  overflow: hidden
+  position: relative
+
+  &__wrapper
+    padding-top: 90px
+    position: relative
+
+  &__title
+    font-weight: 800
+    font-size: 48px
+    line-height: 1.35
+    color: #ffffff
+    margin: 0 0 80px
+    position: relative
+    z-index: 2
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -15px
+    position: relative
+    z-index: 2
+
+  &__item
+    padding: 0 15px 110px
+    width: 33.333%
+
+    &_container
+      height: 100%
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      text-align: center
+      background: #fff
+      padding: 30px 0
+
+    &_icon
+      height: 80px
+      margin-bottom: 20px
+      text-align: center
+
+      img
+        display: inline-block
+        height: 80px
+        width: 80px
+
+    &_date
+      display: block
+      color: #000000
+      font-weight: 500
+      margin-bottom: 15px
+    
+    &_title
+      margin: 0 0 30px
+      text-transform: uppercase
+      font-size: 24px
+      line-height: 1.4
+      color: #000000
+      font-weight: 500
+    
+    &_btn 
+      padding: 15px 40px
+      line-height: 1
+
+  &__shape1
+    right: 0
+
+  &__shape2
+    left: 0
+
+
+/*News page*/
+.page
+  &__title
+    font-weight: 800
+    font-size: 48px
+    line-height: 65px
+    color: #8F489D
+    margin: 0 0 60px
+
+.news-page
+  &__item
+    display: flex
+    align-items: center
+    margin-bottom: 55px
+
+    &_img
+      flex-shrink: 0
+      width: 445px
+      height: 345px
+      margin-right: 30px
+      background: #c4c4c4
+
+      img
+        object-fit: cover
+        width: 100%
+        height: 100%
+        display: block
+
+    &_title
+      font-size: 34px
+      font-weight: 700
+      line-height: 1.3
+      color: #000000
+      margin: 0 0 10px
+
+    &_meta
+      display: inline-block
+      font-size: 10px
+      line-height: 1.6
+      color: #000000
+      font-weight: 700
+      letter-spacing: 1.5px
+      text-transform: uppercase
+
+      &::after
+        display: inline-block
+        content: '|'
+        color: #000000
+        padding: 0 15px
+      
+      &:last-child::after
+        display: none
+
+    &_text
+      margin: 15px 0 25px
+      font-size: 20px
+      line-height: 1.5
+      color: #000000
+
+    &_btn
+      padding: 15px 30px
+
+.pagination
+  display: flex
+  justify-content: center
+
+  &__item
+    display: flex
+    align-items: center
+    margin: 0 3px
+    width: 40px
+    height: 40px
+    text-align: center
+    background: #000
+
+
+
+
+
+
+
+
+
+@import '../components/footer/footer'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
