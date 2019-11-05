@@ -1,0 +1,36 @@
+doctype
+html(lang="ru")
+	head
+		title Document
+		include assets/_metas
+		include assets/_links
+		include assets/_scripts
+	body
+		main.content.content--page
+			.page-left
+			include ../components/header/header
+
+			section.page
+				.wrapper
+					.page__wrapper
+						h2.page__title Связаться с нами
+
+						.contacts
+							.contacts__left
+								p.contacts__text Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside
+								a.contacts__phone(href="tel:8 (843) 519-74-83") 8 (843) 519-74-83
+							.contacts__right
+								form.contacts__form(action="")
+									strong.contacts__form_title
+									select.select(name="adresat")
+										option(value="default" default) кому
+										option(value="Тренерам") Тренерам
+										option(value="Спортсменам") Спортсменам
+										option(value="Секретарю") Секретарю
+									input.input(type="text",name="name")
+									textarea.textarea(name="message")
+									button.btn(type="submit")
+			
+						
+
+		include ../components/footer/footer

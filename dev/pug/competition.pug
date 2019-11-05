@@ -1,0 +1,57 @@
+doctype
+html(lang="ru")
+	head
+		title Document
+		include assets/_metas
+		include assets/_links
+		include assets/_scripts
+	body
+		main.content.content--page
+			.page-left
+			include ../components/header/header
+			
+			article.article
+				.wrapper
+					.article__wrapper
+						.article-top.flex
+							h1.article__title Календарь ФСО РТ на 2019 год
+							.news-page__item_metas
+								span.news-page__item_meta Дата: 20.12.2016
+								span.news-page__item_meta Просмотров: 4349
+								span.news-page__item_meta Добавил: shad
+						.article__img
+							img(src="", alt="")
+						.article__content
+							p Положение о чемпионатах и первенствах Республики Татарстан по спортивному ориентированию на 2019 год можно посмотреть здесь.
+								br
+								|Календарь соревнований, в котором планирует участие сборная команда Республики Татарстан в 2019 году
+							.files
+								a.file.file-doc.flex(href="")
+									i
+									span Положение
+								a.file.file-doc.flex(href="")
+									i
+									span Информация 15 сентября
+								a.file.file-doc.flex(href="")
+									i
+									span Схема 15 сентября
+
+						include ../components/comments/comments
+
+						.article__nav
+							.article__nav_left.article__nav_block
+								a.article__nav_link(href="")
+									strong Чемпионат и Первенство г.Набережные Челны по спортивному ориентированию
+									span  Дата: 29.08.2019
+							.article__nav_right.article__nav_block
+								a.article__nav_link(href="")
+									strong Соревнования
+										br
+										| "Здравствуй осень"
+									span  Дата: 29.08.2019
+
+
+
+							
+			
+		include ../components/footer/footer
