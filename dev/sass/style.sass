@@ -619,6 +619,248 @@ select.select
       margin-bottom: 45px
 
 
+.contacts
+  display: flex
+
+  &__left
+    width: 50%
+    padding-right: 25px 
+    
+  &__right
+    width: 50%
+  &__text
+    max-width: 430px
+    font-size: 20px
+    line-height: 1.5
+    color: #000000
+    margin: 0 0 15px
+
+  &__phone
+    display: flex
+    align-items: center
+    height: 53px
+    margin-top: 60px
+    background: url(../img/icons/icons.svg#phone) no-repeat
+    background-size: 53px 53px
+    padding-left: 80px
+    font-size: 20px
+    font-weight: 700
+    color: #000000
+
+    &:hover
+      text-decoration: underline
+
+  &__form
+    max-width: 445px
+    width: 100%
+    background: #FFFFFF
+    border: 1px solid #8F489D
+    box-sizing: border-box
+    border-radius: 15px
+    padding: 40px 45px 30px
+
+    &_title
+      display: block
+      font-weight: bold
+      font-size: 34px
+      color: #068297
+      line-height: 1
+      margin-bottom: 35px
+
+  &__input
+    display: block
+    margin-bottom: 25px
+    border: none
+    border-bottom: 1px solid #C4C5C5
+    padding-left: 12px
+    letter-spacing: 0.75px
+    text-transform: uppercase
+    width: 100%
+    color: #068295
+
+    &::-webkit-input-placeholder
+      color: #DADADA
+    &::-moz-placeholder
+      color: #DADADA
+
+  &__textarea
+    display: block
+    width: 100%
+    height: 185px
+    background: #F6F6F6
+    border-radius: 10px
+    border: none
+    padding: 15px 12px
+    padding-left: 12px
+    letter-spacing: 0.75px
+    text-transform: uppercase
+    width: 100%
+    color: #068295
+    resize: none
+    margin-bottom: 25px
+
+    &::-webkit-input-placeholder
+      color: #DADADA
+    &::-moz-placeholder
+      color: #DADADA
+
+  &__btn
+    width: 270px
+    margin: 0 auto
+    background: #8F489D
+    border: none
+    display: block
+
+.drop
+  position: relative
+  display: block
+  border-bottom: 1px solid #C4C5C5
+  margin-bottom: 35px
+
+  &::after
+    width: 15px
+    height: 15px
+    position: absolute
+    content: ''
+    top: 14px
+    right: 10px
+    background: url(../img/icons/icons.svg#select) no-repeat center right !important
+    background-size: 15px 15px !important
+
+  &__text
+    display: block
+    cursor: pointer
+    height: 40px
+    line-height: 40px
+    padding-left: 12px
+    letter-spacing: 0.75px
+    text-transform: uppercase
+    color: #DADADA
+
+    span
+      color: #068295
+
+  &__items
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    background: #F6F6F6
+    border-radius: 10px
+    padding: 15px 24px 0
+    opacity: 0
+    visibility: hidden
+    transition: .1s ease-in-out
+
+  &--open .drop__items
+    opacity: 1
+    visibility: visible
+
+  &__item
+    display: block
+    margin-bottom: 15px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    letter-spacing: 0.75px
+    text-transform: uppercase
+    color: #068295
+    cursor: pointer
+
+    &:hover
+      text-decoration: underline
+
+
+/*Story*/
+.red
+  color: #E8604C
+.violet
+  color: #754E9A
+.story
+  display: flex
+  margin-bottom: 200px
+
+  &__block
+    width: 50%
+
+  &__left
+    padding-top: 150px
+    border-right: 3px solid #754E9A
+
+  &__item
+    width: 100%
+    margin-bottom: 140px
+
+    &:last-child
+      margin-bottom: 0
+
+    &--left
+      padding-right: 95px
+    &--right
+      padding-left: 95px
+
+      .story__item_year
+        text-align: left
+
+        &::after
+          right: auto
+          left: -95px
+
+    &_year
+      display: block
+      font-weight: 800
+      font-size: 96px
+      line-height: 1
+      text-align: right
+      position: relative
+      margin-bottom: 20px
+
+      &::after
+        position: absolute
+        content: ''
+        border-bottom: 1px solid #000000
+        width: 85px
+        right: -95px
+        top: 50px
+      
+
+    &_title
+      display: block
+      font-weight: bold
+      font-size: 34px
+      line-height: 1.4
+      margin-bottom: 15px
+
+    &_text
+      font-size: 20px
+      line-height: 1.5
+      color: #000000
+      margin-bottom: 20px
+
+    &_img
+      display: inline-block
+      width: 160px
+      height: 130px
+      background: #C4C4C4
+      margin-right: 30px
+
+      img
+        object-fit: cover
+        width: 100%
+        height: 100%
+      
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import '../components/comments/comments'
 @import '../components/footer/footer'

@@ -8,4 +8,13 @@ window.onload = () => {
 		infinite: false
 	});
 
+	$(".drop__text").click(function(){
+		$(this).parents(".drop").addClass("drop--open");
+	});
+	$(".drop__item").click(function(){
+		$(this).parents(".drop").find(".drop__text").html($(this).html());
+		$(this).parents(".drop").find("input").val($(this).text());
+		$(this).parents(".drop").removeClass("drop--open");
+	});
+
 }

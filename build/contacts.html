@@ -61,16 +61,14 @@
                 <p class="contacts__text">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside</p><a class="contacts__phone" href="tel:8 (843) 519-74-83">8 (843) 519-74-83</a>
               </div>
               <div class="contacts__right">
-                <form class="contacts__form" action=""><strong class="contacts__form_title"></strong>
-                  <select class="select" name="adresat">
-                    <option value="default" default>кому</option>
-                    <option value="Тренерам">Тренерам</option>
-                    <option value="Спортсменам">Спортсменам</option>
-                    <option value="Секретарю">Секретарю</option>
-                  </select>
-                  <input class="input" type="text" name="name">
-                  <textarea class="textarea" name="message"></textarea>
-                  <button class="btn" type="submit"></button>
+                <form class="contacts__form" action=""><strong class="contacts__form_title">Скажи привет</strong>
+                  <label class="drop"><span class="drop__text">кому</span>
+                    <div class="drop__items"><span class="drop__item"> <span>Тренерам</span></span><span class="drop__item"> <span>Спортсменам</span></span><span class="drop__item"> <span>Секретарю</span></span></div>
+                    <input type="hidden" name="adresat" value="Тренерам">
+                  </label>
+                  <input class="contacts__input" type="text" name="name" placeholder="ваше имя">
+                  <textarea class="contacts__textarea" name="message" placeholder="текст"></textarea>
+                  <button class="btn contacts__btn" type="submit">отправить сообщение</button>
                 </form>
               </div>
             </div>
