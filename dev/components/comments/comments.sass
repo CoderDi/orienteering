@@ -62,3 +62,58 @@
     color: #000000
     max-width: 650px
     margin: 0
+
+
+.popup
+  position: fixed
+  z-index: 99
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(196, 196, 196, 0.57)
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: 0
+  visibility: hidden
+  transition: .1s ease-in-out
+
+  &--open
+    opacity: 1
+    visibility: visible
+
+  &-bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  &__block
+    position: relative
+    background: #FFFFFF
+    border: 1px solid #8F489D
+    box-sizing: border-box
+    border-radius: 15px
+    padding: 25px 25px 55px
+    text-align: center
+  &__title
+    display: block
+    margin-bottom: 35px
+    font-weight: bold
+    font-size: 34px
+    line-height: 46px
+    color: #068297
+  &__flex
+    justify-content: center
+  &__soc
+    display: block
+    flex-shrink: 0
+    margin: 0 11px
+    &:hover
+      opacity: 0.8
+    img
+      display: block
+      width: 50px
+      height: 50px
+

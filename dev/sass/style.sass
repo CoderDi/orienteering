@@ -102,7 +102,13 @@
   &__item
     width: 25%
     padding: 0 15px 55px
-    height: 255px
+    // height: 255px
+
+    &::before
+      content: ""
+      padding-top: 100%
+      float: left
+
 
     &_container
       display: block
@@ -420,6 +426,7 @@
   font-size: 20px
   line-height: 1.5
   color: #000000
+  margin-bottom: 20px
 
   &:hover
     text-decoration: underline
@@ -851,21 +858,10 @@ select.select
       
 
 
-
-
-
-
-
-
-
-
-
-
-
 @import '../components/comments/comments'
 @import '../components/footer/footer'
 
-
+@import 'assets/media'
 
 
 
