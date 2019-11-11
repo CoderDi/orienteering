@@ -44,11 +44,11 @@ gulp.task('sass', () => {
 	}))
 	.pipe(autoprefixer(['last 15 versions', '> 1%'], {cascade: false}))    // настройка автоматической подстановки вендорных префиксов
 	.pipe(mmq())                                // собираем все медиа запросы
-	.pipe(cssnano())                            // минификация стилей
-	.pipe(rename({
-		suffix: '.min'                          // переименовываем минифицированный(-ые) файл(-ы) стилей
-	}))
-	.pipe(sourcemaps.write())                   // запись sourcemap'ов
+	// .pipe(cssnano())                            // минификация стилей
+	// .pipe(rename({
+	// 	suffix: '.min'                          // переименовываем минифицированный(-ые) файл(-ы) стилей
+	// }))
+	// .pipe(sourcemaps.write())                   // запись sourcemap'ов
 	.pipe(gulp.dest(`${build}/css`))            // путь вывода файла(-ов)
 	.pipe(browserSync.reload({
 		stream: true                            // инжектим стили без перезагрузки страницы
@@ -61,10 +61,10 @@ gulp.task('_sass',  () => {
 	.pipe(sass())
 	.pipe(autoprefixer(['last 15 versions', '> 1%'], {cascade: false}))
 	.pipe(mmq())
-	.pipe(cssnano())
-	.pipe(rename({
-		suffix: '.min'
-	}))
+	// .pipe(cssnano())
+	// .pipe(rename({
+	// 	suffix: '.min'
+	// }))
 	.pipe(gulp.dest(`${prod}/css`));
 });
 
@@ -90,14 +90,14 @@ gulp.task('_pug',  () => {
 	.pipe(pug({
 		pretty: true
 	}))
-	.pipe(critical({                            // генерируем критический CSS для быстрой загрузки страниц
-		base: `${build}/`,                      // из всех наших файлов
-		minify: true,                           // с минификацией
-		inline: true,
-		width: 1920,
-		height: 1280,
-		css: [`${build}/css/style.min.css`]     // путь к вашему основному файлу стилей, или несколько файлов через звпятую
-	}))
+	// .pipe(critical({                            // генерируем критический CSS для быстрой загрузки страниц
+	// 	base: `${build}/`,                      // из всех наших файлов
+	// 	minify: true,                           // с минификацией
+	// 	inline: true,
+	// 	width: 1920,
+	// 	height: 1280,
+	// 	css: [`${build}/css/style.min.css`]     // путь к вашему основному файлу стилей, или несколько файлов через звпятую
+	// }))
 	.on('error', notify.onError({
 		title: 'PUG',
 		message: '<%= error.message %>'

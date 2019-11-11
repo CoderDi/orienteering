@@ -4,7 +4,6 @@ html(lang="ru")
 		title Document
 		include assets/_metas
 		include assets/_links
-		include assets/_scripts
 	body
 		main.content.content--page
 			.page-left
@@ -13,15 +12,15 @@ html(lang="ru")
 			section.page
 				.wrapper
 					.page__wrapper
-						h2.page__title О нашей ФСО РТ
+						h2.news__title О нашей ФСО РТ
 						.president
 							.president__img
 								img(src="img/president.jpg", alt="")
 							.president__content
 								strong.president__dolg Президент
-								strong.president__name Cидоров
+								strong.president__name Cидоров 
 									br
-									|Алексей
+									|Алексей 
 									br
 									|Анатольевич
 								span.president__description Мастер спорта, Чемпион России, член сборной команды РФ 2005-2015 гг. тренер высшей категории
@@ -116,3 +115,5 @@ html(lang="ru")
 								span Схема 15 сентября
 			
 		include ../components/footer/footer
+		
+		include assets/_scripts

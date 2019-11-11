@@ -143,7 +143,7 @@
 
       strong
         font-weight: bold
-        font-size: 24px
+        font-size: 22px
         line-height: 30px
         color: #ffffff
         text-transform: uppercase
@@ -498,7 +498,7 @@
 
   &__flex
     display: flex
-    width: 100%
+    width: auto
     flex-wrap: wrap
     margin: 0 -20px
   &__item
@@ -584,6 +584,7 @@ select.select
   color: #000000
   height: 100%
   flex-grow: 2
+  width: 100%
 .button
   border: none
   outline: none
@@ -591,6 +592,7 @@ select.select
   height: 27px
   background: url(../img/icons/icons.svg#search)
   cursor: pointer
+  flex-shrink: 0
 
 .docs
   margin-bottom: 30px
@@ -609,7 +611,7 @@ select.select
 
     .news__item
       width: 33.333%
-      height: 340px
+      // height: 340px
       padding: 0 22px 70px
 
 
@@ -844,12 +846,15 @@ select.select
       color: #000000
       margin-bottom: 20px
 
+    &_images
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
     &_img
       display: inline-block
-      width: 160px
+      width: 45%
       height: 130px
       background: #C4C4C4
-      margin-right: 30px
 
       img
         object-fit: cover

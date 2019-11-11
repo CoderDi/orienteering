@@ -1,7 +1,20 @@
 /*Media*/
-@media screen and (max-width: 1300px)
+@media screen and (max-width: 1500px)
   .shape
     display: none
+
+@media screen and (max-width: 1300px)
+  .news__item
+    padding-bottom: 30px
+
+    &_over strong
+      font-size: 16px
+      line-height: 1.35
+  .news-page__item
+    align-items: flex-start
+  .docs .file
+    width: 33.333%
+    font-size: 18px
 
 @media screen and (max-width: 1000px)
   .header__socials
@@ -20,12 +33,6 @@
 
     .slick-dots
       bottom: -50px
-  .news__item
-    padding-bottom: 30px
-
-    &_over strong
-      font-size: 16px
-      line-height: 1.35
 
   .calendar
     &__wrapper
@@ -45,6 +52,67 @@
   .article__content
     padding-bottom: 40px
 
+  .news-page__item
+
+    &_img
+      width: 40%
+      height: 300px
+  .president
+    margin-bottom: 60px
+    &__img
+      width: 40%
+      margin-right: 30px
+    &__dolg
+      margin-bottom: 40px
+  .federation
+    &__item
+      height: auto
+      &::before
+        content: ""
+        padding-top: 100%
+        float: left
+    &__block
+      padding-bottom: 30px
+      
+      &--four .federation__item
+        height: auto
+    &__files
+      padding: 0
+
+  .story__item_year
+    font-size: 32px
+
+    &::after
+      width: 20px
+      right: -20px
+      top: 16px
+  .story__item--right .story__item_year::after
+    left: -20px
+  .story__item_title
+    font-size: 20px
+  .story__item_text
+    font-size: 16px
+  .story__item--left
+    padding-right: 20px
+  .story__item--right
+    padding-left: 20px
+  .contacts
+    flex-wrap: wrap
+    justify-content: center
+    max-width: 900px
+    margin: 0 auto
+  .contacts__left
+    width: 100%
+    padding: 0
+    margin-bottom: 50px
+  .contacts__text
+    max-width: 100%
+  .contacts__phone
+    margin-top: 30px
+  .contacts__right
+    width: 100%
+    max-width: 450px
+
 @media screen and (max-width: 900px)
   .slider__item_img
     right: -8%
@@ -62,7 +130,15 @@
         width: 80px
         height: 80px
   .news__item_over strong
-      font-size: 12px
+    font-size: 12px
+  .news-page__item_title
+    font-size: 24px
+  .news-page__item_text
+    font-size: 16px
+  .sorevnovania__list .news__item
+    padding: 0 15px 30px
+  .sorevnovania__list
+    margin: 0 -15px 40px
 
 @media screen and (max-width: 768px)
   .logo 
@@ -251,6 +327,40 @@
     padding-left: 45px
   .article__nav_right a
     padding-right: 45px
+  .news-page__item
+    display: block
+
+    &_img
+      width: 100%
+      margin: 0 0 30px
+  .pagination__item
+    width: 25px
+    height: 25px
+    font-size: 16px
+  .federation__block_title,
+  .president__dolg
+    font-size: 24px
+  .president__name
+    font-size: 20px
+    line-height: 1.4
+    margin-bottom: 20px
+  .president__description
+    font-size: 16px
+  
+  .federation__item_over
+    font-size: 14px
+    text-transform: capitalize
+  .docs .file
+    font-size: 16px
+    margin-bottom: 30px
+    align-items: flex-start
+  .sorevnovania__list .news__item
+    width: 50%
+  .input
+    width: calc(100% - 27px)
+  .story__title
+    font-size: 24px
+    margin-bottom: 20px
 
 @media screen and (max-width: 600px)
   .footer__menu 
@@ -263,6 +373,52 @@
     line-height: 3
   .wrapper
     padding: 0 10px
+  .federation
+    &__item
+      padding: 0 15px 30px
+    &__flex
+      width: auto
+      margin: 0 -10px
+    &__block
+      overflow: hidden
+  .federation__block--four .federation__item,
+  .federation__block--three .federation__item
+    width: 50%
+  .federation__item_over
+    font-size: 16px
+  .docs .file
+    width: 50%
+  .national__form
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 40px
+
+    .select
+      margin: 0 0 20px
+      width: 45%
+    .label
+      width: 100%
+    .input
+      width: 100%
+      padding: 0
+
+  .story__item
+    margin-bottom: 60px
+  .story__left
+    padding-top: 80px
+  .story__item_img
+    height: 70px
+  .story
+    margin-bottom: 70px
+  .story__man h3
+    margin-bottom: 15px
+    font-size: 18px
+  .story__man
+    margin-bottom: 40px
+  .news-page__item_img
+    height: 250px
+  .news
+    overflow: hidden
 
 
 @media screen and (max-width: 480px)
@@ -310,6 +466,59 @@
     bottom: -50px
   .comment__body
     padding-bottom: 70px
+  .news-page__item
+    margin-bottom: 40px
+    &_img
+      height: 250px
+      margin-bottom: 20px
+    &_title
+      font-size: 18px
+  .president
+    flex-wrap: wrap
+    margin-bottom: 40px
+
+    &__img
+      width: 180px
+      margin: 0 auto 20px
+    &__dolg
+      margin: 0 0 10px
+      font-size: 20px
+    &__name
+      font-size: 18px
+      margin-bottom: 10px
+
+      br
+        display: none
+
+  .federation__block_title
+    margin-bottom: 25px
+  .sorevnovania__list 
+    margin: 0 -10px
+    
+    .news__item
+      padding: 0 10px 20px
+  .story__item_year
+    font-size: 18px
+    margin-bottom: 10px
+
+    &::after
+      top: 9px
+  .story__item_title
+    font-size: 14px
+  .story__item_text
+    font-size: 12px
+  .contacts__text
+    font-size: 16px
+  .contacts__phone
+    background-size: 40px 40px
+    height: 40px
+    padding-left: 55px
+  .contacts__form_title
+    font-size: 20px
+    text-align: center
+    margin-bottom: 20px
+  .contacts__form
+    padding: 20px
     
 
 
